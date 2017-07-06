@@ -1,0 +1,126 @@
+//colors
+$col_purpleLight: #a09db1;
+$col_gray: #e8e8e8;
+$col_lightPurpleBorder: #7a768f;
+$col_white: #fff;
+$col_purpleText: #7c7890;
+$col_black: #000;
+$col_purpleDark: #443f5d;
+
+$font-stack:    Roboto;
+$primary-color: #3f3f3f;
+$font-size-body: 14px;
+$font-size-mobile: 10px;
+
+$break-small: 480px;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  font-size: $font-size-body;
+}
+i.fa-search{
+  color: $col_purpleLight;
+  position: relative;
+	right:8px;
+}
+	
+.fa-phone, .fa-at, .fa-file-text {
+		position: relative;
+		right:8px;
+		}
+.fa-at {
+		font-weight: bold;
+	}
+.even {
+	background-color: $col_gray;
+}
+input {
+	width: 400px;
+	padding: 10px 10px 5px;
+	border: none;
+	border-bottom: 1px solid $col_lightPurpleBorder;
+	outline: none;
+	background: transparent;
+	color: $col_white;
+	margin: 0 0 15px 10px;
+	font-size: 14px;
+}
+::-webkit-input-placeholder, :-ms-input-placeholder  {
+	color: $col_purpleText;
+}
+.container {
+	padding: 0 15px 20px;
+	border-top: 5px solid $col_black;
+	position:relative;
+}
+.results{
+  position:absolute;
+  width:100%;
+  border:5px solid $col_purpleDark;
+  margin:-1px 0 0 -20px;
+}
+.emp_result {
+	width: 300px;
+	padding: 20px 40px;
+}
+.people_name {
+	padding: 10px 0px 0 5px;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom:0;
+}
+.people_row {
+	padding: 10px 20px;
+}
+.emp_data {
+	background-color: $col_white;
+}
+.search_input {
+	background-color: $col_purpleDark;
+	padding: 10px 20px 5px;
+}
+.flex {
+        display: flex;
+        flex-direction: row;
+    }
+    .result-subtext{
+        flex: 1 1 auto;
+      }
+@media screen and (max-width: $break-small) {
+    .emp_row{
+      padding:10px 5px;
+      font-size:$font-size-mobile;
+    }
+    p.policy-no, .phone_no, .email {
+      padding:0px;
+    }
+  	
+	i.fa-search {
+    left:3px;
+		font-size: $font-size-body;
+	}
+	.fa-phone, .fa-at, .fa-file-text {
+		right: 4px;
+	}
+
+input {
+	    width: 230px;
+    }
+    .search_input{
+      padding: 10px 8px 5px;
+    }
+    ::-webkit-input-placeholder,:-ms-input-placeholder  {
+    	font-size:$font-size-mobile;
+  }
+ .results{
+   margin-left:-8px;
+ }
+ .flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .result-subtext{
+        flex: 1 1 auto;
+      }
+  }
